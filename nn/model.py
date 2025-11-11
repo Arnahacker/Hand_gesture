@@ -1,4 +1,5 @@
 import numpy as np
+import pickle as pkl
 
 class NeuralNetwork:
     def __init__(self, layers, loss, loss_prime):
@@ -55,4 +56,12 @@ class NeuralNetwork:
             output = self.forward(x)
             loss_sum += self.loss(y, output)
         return loss_sum / len(x_test)
-
+    
+    def save(self,file_path):
+        file = open(file_path,"wb")
+        pkl.dump(self,file)
+    
+    def load(file_path):
+        file=open(file_path,"rb")
+        model=pkl.load(file)
+        return model

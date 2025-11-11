@@ -5,7 +5,8 @@ gestures = {
     "thumbs_up": "/Users/anoopchhabra/Documents/College/Projects/handgesture/data/processed/gesture_processed/thumbs_up/normalized_closed_fist.csv",
     "open_hand": "/Users/anoopchhabra/Documents/College/Projects/handgesture/data/processed/gesture_processed/open_hand/normalized_closed_fist.csv",
     "thumbs_down":"/Users/anoopchhabra/Documents/College/Projects/handgesture/data/processed/gesture_processed/thumbs_down/normalized_closed_fist.csv",
-    "index_up":"/Users/anoopchhabra/Documents/College/Projects/handgesture/data/processed/gesture_processed/index_up/normalized_closed_fist.csv"
+    "index_up":"/Users/anoopchhabra/Documents/College/Projects/handgesture/data/processed/gesture_processed/index_up/normalized_closed_fist.csv",
+    "neutral":"/Users/anoopchhabra/Documents/College/Projects/handgesture/data/processed/gesture_processed/neutral/normalized_closed_fist.csv"
 }
 
 all_data = []
@@ -16,4 +17,4 @@ for label, path in gestures.items():
     all_data.append(df)
 
 combined = pd.concat(all_data, ignore_index=True)
-combined.to_csv("/Users/anoopchhabra/Documents/College/Projects/handgesture/data/label.csv", index=False)
+combined.to_csv("/Users/anoopchhabra/Documents/College/Projects/handgesture/data/final_data.csv", index=False)

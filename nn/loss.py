@@ -16,7 +16,7 @@ def cross_entropy(y, pred):
     return -np.mean(np.sum(y * np.log(pred), axis=1))
 
 def cross_entropy_diff(y, pred):
-    return (pred - y) / y.shape[0]
+     return (pred - y) / y.shape[0]
 
 
     

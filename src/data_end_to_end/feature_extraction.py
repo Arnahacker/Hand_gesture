@@ -4,7 +4,7 @@ import numpy as np
 import csv
 import time
 
-gesture_name="thumbs_up_raw"#just need to change this to choose the directory
+gesture_name="neutral_raw"#just need to change this to choose the directory
 save_dir = "/Users/anoopchhabra/Documents/College/Projects/handgesture/data/raw/gestures_raw/"+gesture_name+"/"
 
 mp_hand=mp.solutions.hands
